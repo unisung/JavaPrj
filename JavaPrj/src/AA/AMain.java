@@ -2,6 +2,6 @@ package AA;
 
 public class AMain {
 public static void main(String[] args) {
-A a =new A(10);	
+A a =new A();	
 	}
 }

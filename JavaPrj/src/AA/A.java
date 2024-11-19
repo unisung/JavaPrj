@@ -6,4 +6,5 @@ public class A {
 //컴파일러가 default생성자 만들어줌	
 	A(int a){}
 	A(String a){}
+	A(){}
 }
