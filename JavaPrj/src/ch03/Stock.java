@@ -1,6 +1,6 @@
 package ch03;
 //재고정보 클래스 - 캡슐화
-public class Stock {
+public class Stock extends Object{
 	//속성=필드(field)=맴버변수=property
 	private String code;
 	private String name;
@@ -55,5 +55,9 @@ public class Stock {
 			throw new Exception("재고가 모자랍니다");
 		}
 		qty=qty-amount;
+	}
+	@Override
+	public String toString() {
+		return "재고 [상품명=" + name + ", 가격=" + price + "]";
 	}
 }
