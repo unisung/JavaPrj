@@ -11,12 +11,12 @@ public class StockMain {
 	Stock stock2 = 
 	 new Stock("고구마깡", 2000, 300);
 	
-	System.out.println(stock1);
-	System.out.println(stock2);
-	
 	Stock stock3 = new Stock("카스", 3000, 150);
 	
-	System.out.println(stock3);
+	System.out.println(stock1+":"+stock1.seq);
+	System.out.println(stock2+":"+stock2.seq);
+	System.out.println(stock3+":"+stock3.seq);
+	
 	
 	try {
 	//출고처리(새우깡 5개를 출고처리)

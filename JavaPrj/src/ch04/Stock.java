@@ -14,7 +14,7 @@ public class Stock extends Object{
 	private String code;
 	private String name;
 	private int price;
-	private int qty;//현재 재고정보
+	private int qty;//현재 재고정보 - 해당타입의 기본값으로 자동 초기화
 	
 	
 	public String getCode() {
@@ -63,7 +63,10 @@ public class Stock extends Object{
 	//메소드
 	//입고
 	public void inStock(int amount) {
-		qty=qty+amount;
+		int amt=0; //지역변수=로컬변수
+		//amt=amount;
+		amt = qty;
+		qty=qty+amt;
 	}
 	
 	//출고 - 현재고 - 출고량 >=0, if(현재고 - 출고량 <0) 오류발생
