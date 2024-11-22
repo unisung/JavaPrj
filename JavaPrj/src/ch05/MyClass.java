@@ -33,13 +33,24 @@ public class MyClass {
 	 }
 	return (double)s/value.length;
  }
+ //Object타입 가변인자메소드
+ public void log(Object ...value) {
+	 String message=(String)value[0];
+	 if(value.length > 1 ) {
+		 Exception e = (Exception)value[1];
+		 System.out.println(e.getMessage());
+	 }
+	 System.out.println(message);
+ }
  
-
 public static void main(String[] args) {
 	MyClass mc = new MyClass();
 	mc.abc(10,10);
 	
 	int result=mc.sum(1,2,3,4,5,6,7,8,9,10);
 	System.out.println(result);
+	
+	mc.log("에러메세지로그",new Exception("오류났어요"));
+	mc.log("에러메세지로그");
 }
 }
