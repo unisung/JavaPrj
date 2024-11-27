@@ -1,11 +1,11 @@
 package ch11;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
-public class ArrayListExample01 {
+public class LinkedListExample {
 	public static void main(String[] args) {
-	 // 리스트생성
-		ArrayList<String> a = new ArrayList<String>();
+		LinkedList<String> a = new LinkedList<>();
 		//요소 (삽입)
 		a.add("Hello");
 		a.add("Hi");
@@ -63,4 +63,5 @@ public class ArrayListExample01 {
 		
 		System.out.println(a.isEmpty());
 	}
+
 }
