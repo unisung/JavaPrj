@@ -2,10 +2,11 @@ package ch11;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListExample {
 	public static void main(String[] args) {
-		LinkedList<String> a = new LinkedList<>();
+		List<String> a = new LinkedList<>();
 		//요소 (삽입)
 		a.add("Hello");
 		a.add("Hi");
