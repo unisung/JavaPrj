@@ -1,12 +1,14 @@
 package ch11;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListExample01 {
 	public static void main(String[] args) {
 	 // 리스트생성
-		List<String> a = new ArrayList<String>();
+		List<String> a 
+   = Collections.synchronizedList(new ArrayList<String>());
 		//요소 (삽입)
 		a.add("Hello");
 		a.add("Hi");
